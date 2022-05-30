@@ -1,2 +1,7 @@
 <h1>Pages#home</h1>
 <p>Find me in app/views/pages/home.html.erb</p>
+
+
+<h1>Current User <%= current_user.name if user_signed_in? %></h1>
+
+<%= link_to 'Restaurants', restaurants_path %>
